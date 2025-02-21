@@ -73,9 +73,9 @@ Let's check whether the `AGE` variable is numeric and whether `RACE` is characte
 
 ```{r check_variable_types}
 
-is.numeric("AGE")
+is.numeric(adsl$AGE)
 
-is.character("RACE")
+is.character(adsl$RACE)
 
 ```
 
