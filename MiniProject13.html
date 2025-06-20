@@ -447,7 +447,7 @@ adsl_saf = import(&quot;https://github.com/phuse-org/phuse-scripts/raw/master/da
     group_by( TRT01AN, TRT01A  ) %&gt;%
     count(name = &quot;N&quot;)
 
-  ## Calculating count for each category of SEX
+  ## Calculating count for each category of AGEGR1
       
   small_n_cnt = adsl_saf  %&gt;%
            group_by( TRT01AN, TRT01A,  AGEGR1 ) %&gt;%
@@ -484,7 +484,7 @@ adsl_saf = import(&quot;https://github.com/phuse-org/phuse-scripts/raw/master/da
 group_by( TRT01AN, TRT01A  ) %&gt;%
 count(name = &quot;N&quot;)
 
-  ## Calculating count for each category of SEX
+  ## Calculating count for each category of RACE
 
 small_n_cnt = adsl_saf  %&gt;%
 group_by( TRT01AN, TRT01A, RACE, SEX ) %&gt;%
@@ -585,7 +585,7 @@ adsl_mrg_cnt</code></pre>
   group_by( TRT01AN, TRT01A  ) %&gt;%
   count(name = &quot;N&quot;)
 
-## Calculating count for each category of SEX
+## Calculating count for each category of AGEGR1
 
 small_n_cnt = adsl_saf  %&gt;%
   group_by( TRT01AN, TRT01A,  AGEGR1 ) %&gt;%
@@ -622,7 +622,7 @@ adsl_mgr_cnt</code></pre>
   group_by( TRT01AN, TRT01A  ) %&gt;%
   count(name = &quot;N&quot;)
 
-## Calculating count for each category of SEX
+## Calculating count for each category of RACE
 
 small_n_cnt = adsl_saf  %&gt;%
   group_by( TRT01AN, TRT01A, RACE, SEX ) %&gt;%
