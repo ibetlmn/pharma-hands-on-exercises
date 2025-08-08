@@ -150,6 +150,7 @@ Again as long as we have the necessary packages included in the reprex, there's 
 5.  Looking at reprex including a plot.
 
 ```{r}
+knitr::opts_knit$set(upload.fun = identity)
 library(tidyverse)
 library(rio)
 
@@ -337,6 +338,24 @@ creating a great reprex requires work. You are most likely creating a reprex bec
 Create a more minimal reprex that will help someone else understand and help you fix the problem.
 
 ```{r}
+#knitr::opts_knit$set(upload.fun = identity)
+#library(tidyverse)
+#library(rio)
+
+#adlb <- import("https://github.com/phuse-org/phuse-scripts/raw/master/data/adam/cdisc/adlbh.xpt")
+
+#BICARB <- adlb %>%  
+    #filter(SAFFL == "Y") %>% 
+    #filter(PARAMCD == "BASO")
+
+
+#ggplot(data = BICARB,
+       #mapping = aes(x = ADY, y = AVAL)) +
+  #geom_point(aes(colour = THERAPY1))
+```
+
+```{r}
+knitr::opts_knit$set(upload.fun = identity)
 library(tidyverse)
 library(rio)
 
